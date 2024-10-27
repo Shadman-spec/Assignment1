@@ -202,9 +202,11 @@ header {
 .cardp {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
 
-
-
+.card h5 {
+    padding-left: 120px;
 }
 
 .line-1 {
@@ -212,13 +214,17 @@ header {
     height: 2px;
     background-color: red;
     margin-top: -20px;
+    margin-left: 120px;
+    margin-bottom: 15px;
 }
 
 .line-4 {
     width: 50px;
     height: 2px;
     background-color: red;
-    margin-top: -25px;
+    margin-top: -20px;
+    margin-left: 120px;
+    margin-bottom: 15px;
 }
 
 .line-3 {
@@ -226,13 +232,17 @@ header {
     height: 2px;
     background-color: rgb(233, 223, 223);
     margin-top: -20px;
+    margin-left: 120px;
+    margin-bottom: 15px;
 }
 
 .line-2 {
     width: 50px;
     height: 2px;
     background-color: red;
-    margin-top: -15px;
+    margin-top: -20px;
+    margin-left: 120px;
+    margin-bottom: 15px;
 
 }
 
@@ -245,7 +255,9 @@ header {
 
 .card p {
     color: #737373;
+    padding-left: 120px;
 }
+
 
 .p {
     margin-top: 5px;
@@ -820,4 +832,140 @@ li {
     font-size: 14px;
     font-weight: 700px;
     color: #737373;
+}
+
+@media screen and (max-width:480px) {
+
+    /* Header Responsive CSS */
+    .options {
+        display: none;
+    }
+
+
+    .lefth h3 {
+        padding-left: 120px;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .rightl {
+        display: none;
+    }
+
+    .righth button {
+        margin-left: -650px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .rightc img {
+        width: 360px;
+        height: 400px;
+        padding-left: 70px;
+        margin-top: 70px;
+
+    }
+
+
+    .leftc {
+        margin-top: -310px;
+        margin-left: 40px;
+    }
+
+    .leftc h5 {
+        color: #96BB7C;
+        font-size: 10px;
+
+    }
+
+    .leftc h1 {
+        color: #252B42;
+        font: size 10px;
+        ;
+    }
+
+    .leftc,
+    .courses {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .leftc h4 {
+        font-size: 10px;
+    }
+
+    .courses {
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 200px;
+        width: 480px;
+
+
+    }
+
+    .Our {
+        margin-top: -150px;
+        margin-left: -200px;
+    }
+
+    .Our p {
+        font-size: 8px;
+        margin-left: -50px;
+    }
+
+    .cardp {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-right: 0px;
+        gap: 90px;
+        height: auto;
+    }
+
+    .card {
+
+        margin-left: -540px;
+    }
+
+    .edu {
+        margin-top: 1400px;
+    }
+
+    .get {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .im {
+        width: 150px;
+        height: auto;
+        margin-left: -300px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .ed {
+        margin-left: 200px;
+    }
+
+    .line {
+        margin-left: 100px;
+        margin-bottom: -20px;
+    }
+
+    .ed h2 {
+        margin-left: 80px;
+    }
+
+    .ed button {
+        margin-left: 130px;
+    }
 }
